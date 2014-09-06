@@ -1,0 +1,827 @@
+/**************************************
+Let's hide some shit we don't want
+**************************************/
+#badge,
+#categories,
+#help,
+#website {
+    display: none;
+}
+/**************************************
+And then restyle everything else
+**************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+a img  {
+  border: none;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+}
+input,
+textarea {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  color: #666;
+  border: 1px solid #666;
+  padding: 2px;
+  width: 80px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+input:focus,
+textarea:focus {
+  outline:none;
+  background:#ccc;
+  color:#333;
+}
+
+hr {
+    margin-bottom: 10px;
+    height: 1px;
+    color: #ccc;
+    background: #ccc;
+    border: none;
+}
+h3 {
+  font-weight:bold;
+  color:#333;
+  font-size:11px;
+}
+.currency_sign {font-weight:bold;}
+/*============================================================
+ Wrapper
+============================================================*/
+#wrap {
+    width: 660px;
+    margin: 0 auto 50px;
+    padding: 20px 40px 0 40px;
+    background-color: #FFF;
+    min-height: 100%;
+}
+/*============================================================
+ Header
+============================================================*/
+#header a {
+    background: url('http://www.donhoubicycles.com/wp-content/themes/DonhouBicycles/images/logo.png') no-repeat;
+    height: 93px;
+    width: 660px;
+    display: block;
+    text-indent: -9999px;
+    margin: 30px 0 20px 0;
+    border: none;
+    text-decoration: none;
+}
+#header {
+  margin-bottom: 5px;
+  }
+
+#header.image h1 span {
+  display: none;
+  }
+
+#header h1 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 35px;
+  }
+
+#header h1 span {
+  padding: 30px 0 10px;
+  }
+
+/*============================================================
+ Main Content Area
+============================================================*/
+
+#main {
+    margin: 0 0 20px 0;
+}
+
+/*============================================================
+ Navigation
+============================================================*/
+
+#navigation {
+    padding: 0px 0 10px 0;
+    border-bottom: 1px dotted #666;
+    margin: 0 0 20px 0;
+}
+
+#navigation div.pod {
+  clear: both;
+  width: 148px;
+  margin-bottom: 5px;
+  padding: 0 15px 12px 15px;
+  font-size: 10px;
+  background: #fff;
+  }
+
+* html #navigation div.pod {
+  width: 178px;
+  w\idth: 148px;
+  }
+
+#navigation div.pod h3 {
+  display: block;
+  width: 160px;
+  margin: 0 -15px 11px -15px;
+  padding: 4px 9px 6px 9px;
+  font-size: 9px;
+  font-weight: normal;
+  color: #CDE2F0;
+  background: #404040;
+  }
+
+* html #navigation div.pod h3 {
+  width: 178px;
+  w\idth: 160px;
+  }
+
+#navigation div.pod ul {
+  margin-bottom: 3px;
+  }
+
+#navigation div.pod li {
+  margin-top: 3px;
+  padding: 3px 0;
+  list-style: none;
+  border-bottom: 1px solid #EFEFEF;
+  }
+
+
+/* MiniCart Contents -------------------------------------------*/
+
+#minicart {
+
+}
+
+#minicart h3 {
+    display: none;
+}
+#minicart .minicart-contents {
+    float: left;
+    clear: left;
+    width: 300px;
+  font-size: 14px;
+  color: #666;
+  font-family: sans-serif;
+}
+
+#minicart .minicart-contents li {
+    padding: 5px 0;
+}
+#minicart .minicart-total {
+
+}
+
+#minicart .minicart-options {
+    float: right;
+    width: 130px;
+}
+
+#minicart .minicart-view {
+
+}
+
+#minicart  a,
+button,
+a.button {
+  display: inline-block;
+  padding: 1px 10px;
+  background: #e9e9e9;
+  border: none;
+  color: #999;
+  font-size: 12px;
+  line-height: 150%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+#minicart a:hover,
+button:hover,
+a.button:hover {
+  background:#ddd;
+}
+#minicart a:active,
+button:active,
+a:button:active {
+  background:#ccc;
+  color:#666;
+  -webkit-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+}
+#minicart .minicart-options a {
+    float: right;
+    margin: 0 0 5px 0;
+}
+.cart-options .button {
+  margin: 0 3px 0 0;
+}
+
+
+/* Search --------------------------------------------------*/
+
+#search-input {
+  width: 113px;
+  height: 12px;
+  padding: 1px;
+  font-size: 10px;
+  vertical-align: middle;
+  }
+
+#search-submit {
+  width: 24px;
+  height: 18px;
+  margin-left: 3px;
+  vertical-align: middle;
+  border: none;
+  background: url({{ 'btn-go.gif' | theme_image_url }}) no-repeat;
+  cursor: pointer;
+  }
+
+#search-submit span {
+  display: none;
+  }
+
+
+/* Artists -------------------------------------------------*/
+
+#artists-select {
+  width: 148px;
+  font-size: 10px;
+  }
+
+/*============================================================
+ Footer
+============================================================*/
+
+#footer {
+  clear: both;
+  }
+
+
+
+/*============================================================
+ Alerts
+============================================================*/
+
+div#error {
+  margin-bottom: 10px;
+  background: maroon;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+div#error h2,
+div#error p {
+  display: none;
+  }
+
+div#error ul {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 13px;
+  color: #fff;
+  line-height: 25px;
+  }
+
+div#error li {
+  margin: 0;
+  padding: 0 10px;
+  font-weight: bold;
+  }
+
+.form-error {
+  border: 1px solid #cf3636;
+  }
+
+
+
+/*============================================================
+ Site Link
+============================================================*/
+
+#website {
+  position: absolute;
+  top: 0;
+  background: #fff;
+  }
+
+#website a {
+  display: block;
+  padding: 2px 14px 3px 14px;
+  font-size: 10px;
+  line-height: 10px;
+  }
+
+/*************************************************************
+
+ Store Pages
+
+*************************************************************/
+
+
+
+/*============================================================
+ Product List
+============================================================*/
+
+#products {
+  width: 690px;
+  overflow: hidden;
+}
+#products div.product {
+  float: left;
+  width:200px;
+  height:200px;
+  margin: 0 30px 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+#products div.product.endrow {
+margin: 0 0 20px 0;
+}
+#products .product-info {
+  background: #333;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  position: absolute;
+  width: 180px;
+  bottom: 0;
+  left: 0;
+}
+#products .product-info h3 {
+  color: #ccc;
+}
+#products .product:hover .product-info h3 {
+  color:#fff;
+}
+
+#products .product-title {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#products .product-a,
+#products .product-a:hover {
+  border: none;
+  background: none;
+}
+#products img {
+  width:100%;
+  height:auto;
+}
+#cart-content {
+  font-size: 12px;
+  color: #666;
+}
+.total,
+.total-price {
+  color:#333;
+  font-weight:bold;
+  font-size:16px;
+}
+.remove-btn,
+.remove-btn:hover {
+  background: url(http://www.donhoubicycles.com/wp-content/themes/DonhouBicycles/images/delete.png) no-repeat;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: none;
+  margin:1px 0 1px 0;
+}
+.remove-btn:active {
+  margin:2px 0 0 0;
+}
+
+/* Pagination
+------------------------------------------------------------*/
+
+.pagination {
+  clear: both;
+  padding: 20px 0 15px 0;
+  font-weight: normal;
+  text-align: center;
+  }
+
+.pagination span,
+.pagination a {
+    padding: 0 3px 0 6px;
+}
+.pagination span.disabled {
+    display: none;
+}
+.pagination span.current {
+    font-weight: bold
+}
+.pagination span.yadda {
+    padding: 5px 4px;
+    background: none;
+}
+#product-image {
+    display: block;
+    border:none;
+    background:none;
+}
+#product-image img {
+    cursor:pointer;
+}
+/*============================================================
+ Product Detail
+============================================================*/
+#product-content {
+    float: left;
+    width: 100%;
+    padding-bottom: 25px;
+}
+#product-images {
+    float: right;
+    width: 450px;
+    height: 450px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+a#product-image span.icon_zoom {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+    cursor: pointer;
+    overflow: hidden;
+}
+a#product-image:hover span.icon_zoom {
+    background-position: 0;
+}
+#product-images .product-img {
+    margin: 0 0 10px 0;
+}
+#product-images .images-nav {
+    position: absolute;
+    width: 450px;
+    top: 210px;
+}
+.images-prev {
+    float: left;
+}
+.images-next {
+    float: right;
+}
+#product-images .images-list {
+    display: none;
+}
+
+#product-images .images-list li {
+    display: inline;
+    padding: 0 5px;
+    list-style: none;
+    border-left: 1px solid #666;
+}
+#product-images .images-list li.image-1 {
+    border-left: none;
+}
+#product-images .images-prev a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding:0 10px;
+    background: url(http://www.donhoubicycles.com/wp-content/themes/DonhouBicycles/images/prev.png) no-repeat right;
+    border: none;
+}
+#product-images .images-next a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding:0 10px;
+    background: url(http://www.donhoubicycles.com/wp-content/themes/DonhouBicycles/images/next.png) no-repeat left;
+    border: none;
+}
+#product-images .images-prev span,
+#product-images .images-next span {
+    display: none;
+}
+#product-details {
+    float: left;
+    width: 190px;
+    margin: 0;
+}
+#product-details ul {
+    margin-left: 17px;
+}
+#product-details ol {
+    margin-left: 23px;
+}
+#product-details li {
+    font-size: 11px;
+    line-height: 15px;
+    list-style: disc;
+}
+#product-details ol li {
+    list-style: decimal;
+}
+#product-details .price {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+    padding:10px 0 0 0;
+    border-top: 1px dotted #666;
+}
+#product-form {
+  padding: 10px 0;
+  border-bottom: 1px dotted #666;
+  margin: 0;
+}
+#product-form .options select {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+#product-form .options ul {
+    margin: .8em 0;
+}
+#product-form .options li {
+    list-style: none;
+    padding: 1px 5px;
+}
+#product-form .options li input {
+    text-align: left;
+    vertical-align: middle;
+}
+#product-form .options li label {
+    vertical-align: middle;
+    font-weight: bold;
+}
+#product-form .options li.sold label {
+    font-weight: normal;
+    color: #999;
+}
+#product-details div.sold h4,
+#product-details div.soon h4 {
+    margin-top: .8em;
+    font-size: 18px;
+    font-weight: bold;
+}
+#product-details div.sold h4 {
+    color: #cf3636;
+}
+#inventory {
+    float: left;
+    width: 100%;
+    padding: 10px 0 12px 0;
+    border-bottom: 1px solid #ccc;
+}
+#inventory h3 {
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+#inventory ul {
+    margin: 0;
+}
+#inventory li {
+    float: left;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 3px;
+    background: #f2f2f2;
+    list-style: none;
+}
+#inventory .bar {
+    display: block;
+    position: relative;
+    height: 14px;
+    background: #dadada;
+}
+#inventory .bar span {
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 150px;
+    height: 12px;
+    font-size: 10px;
+    line-height: 12px;
+    overflow: hidden;
+}
+#inventory .bar span em {
+    display: none;
+}
+#inventory span.sold {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    font-size: 10px;
+    color: #ccc;
+    line-height: 12px;
+}
+/*============================================================
+ Cart
+============================================================*/
+#cart-table {
+    width: 100%;
+}
+#cart-table td,
+#cart-table th {
+    text-align: left;
+    padding: 5px 10px 5px 0;
+}
+/* Cart Footer ---------------------------------------------*/
+#cart-footer {
+    margin: 10px 0;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px dotted #666;
+    border-top: 1px dotted #666;
+}
+#cart-footer .cart-update {
+    float: right;
+}
+#cart-footer .cart-shipping {
+    float: left;
+}
+#cart-footer #country {
+    width: 160px;
+    margin-left: 5px;
+    padding: 2px 0;
+    font-size: 11px;
+}
+#cart-footer .cart-discount {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+}
+#cart-footer #cart_discount_code {
+    width: 80px;
+    margin-left: 10px;
+}
+#cart-footer .cart-discount p {
+    margin: 1px 0;
+}
+#cart-footer .cart-total {
+    padding: 10px 0;
+    border-top: 1px dotted #666;
+    margin: 20px 0 0 0;
+}
+#cart-footer .cart-total h3 {
+    font-size: 16px;
+    margin: 0;
+}
+#cart-footer .cart-total p {
+    margin-bottom: 0;
+    font-size: 9px;
+    color: #999;
+}
+#cart-footer .cart-total #cart-shipping-tax p {
+    margin-bottom: 7px;
+    font-size: 11px;
+    color: #666;
+}
+#cart-footer .cart-options {
+    text-align: right;
+}
+#cart-footer .cart-checkout {
+    float: left;
+}
+span.total-discount,
+span.total-shipping {
+    font-weight: bold;
+}
+/*============================================================
+ FAQ
+============================================================*/
+#faq-content {
+    padding: 15px 25px;
+}
+#faq-content .faq-list dt {
+    margin-bottom: .5em;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+}
+#faq-content .faq-list dd {
+    margin-bottom: 2.3em;
+}
+/*============================================================
+ Contact
+============================================================*/
+#contact-content {
+    padding: 15px 25px;
+}
+#contact-form {
+    width: 425px;
+    padding: 15px 0;
+}
+#contact-form label {
+    float: left;
+    width: 85px;
+    padding: 2px 0;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+    color: #666;
+}
+#contact-form input,
+#contact-form textarea {
+    float: left;
+    width: 250px;
+    margin: 0 25px 8px 10px;
+    vertical-align: bottom;
+}
+#contact-form textarea {
+    width: 300px;
+    height: 150px;
+}
+#contact-form p,
+#captcha-div {
+  float: left;
+  display: inline;
+  width: 330px;
+  margin: 0 -3px 10px 95px; /* -3px fixes ie6 duplicate chars */
+}
+#contact-form p {
+    margin-bottom: 25px;
+}
+#contact-submit {
+    clear: both;
+    display: block;
+    width: 42px;
+    height: 18px;
+    margin: 0 0 0 95px;
+    border: none;
+    cursor: pointer;
+}
+#contact-submit span {
+    display: none;
+}
+/*============================================================
+ Success
+============================================================*/
+body.success #main-content h2 {
+    padding: 20px 20px 0 20px;
+    font-size: 17px;
+}
+body.success #main-content p {
+    padding: 0 20px 20px 20px;
+}
+/*============================================================
+ Custom Pages
+============================================================*/
+#faq-content {
+    padding: 0;
+}
+body.custom #main-content {
+    width: 507px;
+    padding: 20px 25px;
+}
+body.custom #main-content strong {
+    font-weight: bold;
+}
+body.custom #main-content em {
+    font-style: italic;
+}
+body.custom #main-content code,
+body.custom #main-content pre {
+    white-space: pre;
+}
+body.custom #main-content h2,
+body.custom #main-content h3,
+body.custom #main-content h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+body.custom #main-content ul,
+body.custom #main-content ol,
+body.custom #main-content blockquote {
+    padding: 0 50px;
+}
+body.custom #main-content ul li {
+    line-height: 15px;
+    list-style: disc;
+}
+body.custom #main-content ol li {
+    line-height: 15px;
+    list-style: decimal;
+}
+body.custom #main-content blockquote {
+    margin-bottom: 1em;
+    font-style: italic;
+}
+body.custom #main-content dt {
+    margin-bottom: .5em;
+    font-size: 13px;
+    font-weight: bold;
+}
+body.custom #main-content dd {
+    margin-bottom: 2.3em;
+    line-height: 15px;
+}

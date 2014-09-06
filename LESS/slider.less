@@ -1,0 +1,141 @@
+/*****************************
+  Setup
+ *****************************/
+.slideshow {
+	position:relative;
+	width:660px;
+	height:440px;
+}
+.anythingSlider {
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin:0 auto 10px auto;
+	padding:0;
+}
+.anythingSlider li {
+	list-style: none;
+	padding: 0;
+}
+.anythingSlider img {
+	width:100%;
+	height:auto;
+}
+/*****************************
+  Thumb Nav
+ *****************************/
+.thumbNav {
+	text-align: center;
+	li {
+		display: inline-block;
+		margin:5px;
+		a {
+			display: block;
+			text-indent: -9999px;
+			background: #CCC;
+			width: 13px;
+			height: 13px;
+			.br(15px);
+			.trans(background 0.3s);
+			&.cur,
+			&:hover {
+				background:#444;
+			}
+		}
+	}
+}
+/*****************************
+  Loading layer
+ *****************************/
+.js .slideshow:after {
+	content:'';
+	position: absolute;
+	background: #fff url(images/ajax-loader.gif) no-repeat center center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.js .slideshow.loaded:after {
+	display:none;
+}
+/*****************************
+  Arrows
+ *****************************/
+.arrow {
+	top: 50%;
+	margin-top:-15px; // half height
+	position: absolute;
+	display: block;
+	opacity:0.6;
+	.trans(opacity 0.2s);
+	&:hover {
+		opacity:1.0;
+	}
+}
+.arrow a:link {
+	display: block;
+	height: 30px;
+	margin: 0;
+	width: 30px;
+	text-align: center;
+	outline: 0;
+	border:none;
+	background:transparent;
+	&:hover { background:transparent; }
+	&:visited { border:none; }
+}
+.arrow.back {
+	background: transparent url('images/prev.png') no-repeat 0 0;
+	left: 10px;
+}
+.arrow.forward {
+	background: transparent url('images/next.png') no-repeat 0 0;
+	right: 10px;
+}
+.back.disabled,
+.arrow span,
+.forward.disabled {
+	display: none;
+}
+/***********************
+  COMMON SLIDER STYLING
+ ***********************/
+div.anythingSlider {
+	display: block;
+	margin: 0 auto;
+	overflow: visible !important; /* needed for Opera and Safari */
+	position: relative;
+}
+/* anythingSlider viewport window */
+div.anythingSlider .anythingWindow {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/* anythingSlider base (original element) */
+.anythingBase {
+	background: transparent;
+	list-style: none;
+	position: absolute;
+	overflow: visible !important;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+/* all panels inside the slider */
+.anythingBase .panel {
+	background: transparent;
+	display: block;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.anythingBase .panel.vertical {
+	float: none;
+}
