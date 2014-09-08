@@ -9,13 +9,22 @@ $(function () {
 		$(this).html(e).replaceWith('<a href=\"mailto:' + $(this).text() + '">' + $(this).text() + '</a>');
 	});
 
-	$('.slideshow').anythingSlider({
+	$('.slideshow:not(.autoplay)').anythingSlider({
 		buildNavigation:false,
 		buildArrows:true,
 		hashTags:false,
 		mode:'fade',
 		buildStartStop:false,
 		autoPlay:false
+	});
+
+	$('.slideshow.autoplay').anythingSlider({
+		buildNavigation:false,
+		buildArrows:true,
+		hashTags:false,
+		mode:'fade',
+		buildStartStop:false,
+		autoPlay:true
 	});
 
 });
