@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "reset";
+@import "reset.less";
 @import "mixins.less";
 @import "slider.less";
 
@@ -19,6 +19,10 @@ a:link {
 html {
 	overflow:auto;
 	overflow-y: scroll;
+}
+
+.mt-0 {
+	margin-top:0!important;
 }
 
 /*********************
@@ -68,7 +72,7 @@ a:hover {
 /*********************
 Navigation
 *********************/
-#menu {
+.menu {
 	text-transform:uppercase;
  	font-size: 12px;
  	list-style: none;
@@ -78,19 +82,52 @@ Navigation
 	margin:0 0 10px 0;
 	padding:0;
 }
-#menu li {
+.menu li {
  	margin-right: 30px;
  	padding: 3px 0 2px 0;
 	display:inline-block;
 }
-#menu a {
+.menu-item {
+	position:relative;
+}
+.sub-menu {
+	position:absolute;
+	z-index:9;
+	background: #fff;
+    border: dotted #666;
+    border-width: 0 1px 1px 1px;
+    top: 100%;
+    left:0;
+    right:0;
+    display: none;
+    li {
+    	display:block;
+    	margin:0;
+    	padding:0;
+    }
+    a {
+    	display:block;
+    	padding:4px 8px;
+    	&:link,
+    	&:visited {
+    		color:#666;
+    	}
+    	&:hover {
+    		color:#000;
+    	}
+    }
+}
+.menu-item-has-children:hover .sub-menu {
+	display:block;
+}
+.menu a {
 	border:none;
 	text-decoration:none;
 	color:#666;
 }
-#menu a:hover,
-#menu .current_page_item a,
-#menu .current-cat a {
+.menu a:hover,
+.current_page_item a,
+.current-cat a {
 	background-color:#fff;
 	color:#000;
 }
@@ -219,6 +256,8 @@ table.sizes {
 		img {
 			display:block;
 			margin-bottom: 20px;
+			width:100%;
+		    height:auto;
 			&:last-child {
 				margin:0;
 			}

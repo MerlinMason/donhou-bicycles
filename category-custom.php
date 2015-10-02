@@ -4,7 +4,7 @@
 		<?php // spit out all the gallery images into an unordered list
 			echo('<ul class="slideshow autoplay">');
 				if(get_field('gallery', 'option')):
-					while(the_repeater_field('gallery')):
+					while(the_repeater_field('gallery', 'option')):
 						$attachment_id = get_sub_field('slide');
 						$size = "large"; // (thumbnail, medium, large, full or custom size)
 						$image = wp_get_attachment_image_src( $attachment_id, $size );
