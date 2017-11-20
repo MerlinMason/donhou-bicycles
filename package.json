@@ -1,0 +1,21 @@
+{
+    "name": "donhou-bicycles",
+    "version": "1.0.0",
+    "private": true,
+    "description": "donhou-bicycles ===============",
+    "main": "js/project.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "less": "lessc --clean-css LESS/style.less style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MerlinBB/donhou-bicycles.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MerlinBB/donhou-bicycles/issues"
+    },
+    "homepage": "https://github.com/MerlinBB/donhou-bicycles#readme"
+}
