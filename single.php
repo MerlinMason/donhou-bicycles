@@ -1,10 +1,10 @@
 <?php
 
-	if ( in_category(news) ) {
+	if ( in_category('news') ) {
 
 		include('_news-single.php');
 
-	} elseif (in_category(custom) ) {
+	} elseif (in_category('custom') ) {
 
 		include('_custom-single.php');
 
