@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <title><?php wp_title('|', true, 'right') ?> <?php bloginfo('name'); ?></title>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ) ?>">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ) ?>?123">
 
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <?php wp_enqueue_script('jquery'); ?>
